@@ -1,0 +1,115 @@
+/*
+ * WAQTI design tokens.
+ * Values are RGB channels so Tailwind can apply alpha: rgb(var(--x) / 0.5).
+ * Light and dark are tuned independently — dark is NOT an inversion of light.
+ *
+ * Brand: Emerald #102B26 · Emerald-2 #176B56 · Gold #D1AD70 · Cream #F5F2EA · Night #111816
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Surfaces — warm cream canvas with paper-like cards */
+  --canvas: 245 242 234;
+  --canvas-subtle: 239 235 225;
+  --surface: 255 253 249;
+  --surface-2: 250 247 240;
+  --sunken: 236 231 219;
+  --line: 228 222 208;
+  --line-strong: 210 202 184;
+
+  /* Text — deep emerald ink rather than pure black */
+  --ink: 16 43 38;
+  --ink-muted: 78 98 92;
+  --ink-subtle: 108 122 117;
+
+  /* Interactive emerald */
+  --primary: 23 107 86;
+  --primary-fg: 255 253 249;
+  --primary-strong: 16 43 38;
+  --primary-soft: 220 235 227;
+
+  /* Gold accent — fill only on light; use accent-strong for text */
+  --accent: 209 173 112;
+  --accent-fg: 16 43 38;
+  --accent-strong: 138 104 48;
+  --accent-soft: 246 236 214;
+
+  /* Signature hero surface */
+  --hero: 16 43 38;
+  --hero-fg: 245 242 234;
+  --hero-muted: 178 196 189;
+  --hero-line: 245 242 234;
+
+  /* Status */
+  --success: 30 125 85;
+  --success-soft: 223 239 230;
+  --warning: 178 116 20;
+  --warning-soft: 248 236 212;
+  --danger: 185 60 52;
+  --danger-soft: 248 225 221;
+  --info: 45 105 155;
+  --info-soft: 222 233 244;
+
+  --ring: 23 107 86;
+  --shadow: 16 43 38;
+
+  /* Typography */
+  --font-body: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --sidebar-width: 17rem;
+  --sidebar-rail: 4.75rem;
+  --topbar-height: 4rem;
+  --mobile-nav-height: 4.25rem;
+}
+
+:root[lang='ar'] {
+  --font-body: 'IBM Plex Sans Arabic', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Alexandria Variable', 'IBM Plex Sans Arabic', 'Inter Variable', ui-sans-serif, sans-serif;
+}
+
+.dark {
+  color-scheme: dark;
+
+  /* Surfaces — layered night emerald, elevation by lightness */
+  --canvas: 17 24 22;
+  --canvas-subtle: 20 28 26;
+  --surface: 24 33 30;
+  --surface-2: 29 40 36;
+  --sunken: 13 19 17;
+  --line: 40 53 49;
+  --line-strong: 56 72 66;
+
+  --ink: 236 232 222;
+  --ink-muted: 164 176 170;
+  --ink-subtle: 124 139 133;
+
+  --primary: 61 170 137;
+  --primary-fg: 9 22 18;
+  --primary-strong: 150 214 191;
+  --primary-soft: 24 56 47;
+
+  --accent: 214 182 125;
+  --accent-fg: 16 24 20;
+  --accent-strong: 224 196 146;
+  --accent-soft: 52 45 31;
+
+  --hero: 20 47 40;
+  --hero-fg: 241 237 227;
+  --hero-muted: 160 186 176;
+  --hero-line: 241 237 227;
+
+  --success: 84 192 143;
+  --success-soft: 24 52 41;
+  --warning: 226 172 84;
+  --warning-soft: 56 44 24;
+  --danger: 236 112 102;
+  --danger-soft: 62 30 28;
+  --info: 112 166 220;
+  --info-soft: 26 40 57;
+
+  --ring: 61 170 137;
+  --shadow: 0 0 0;
+}
